@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -19,20 +19,25 @@ body {
   /* border: 1px solid red; */
 }
 
+header {
+  border-bottom: 8px solid #999;
+}
+
 .intro-chunk {
   margin-top: 96px;
   margin-bottom: 64px;
+  max-width: 415px; /* max-width is sufficient for scaling */
 }
 
 .title {
   margin: 0 0 48px;
+  font-size: 3rem;
+  line-height: 1.2;
 }
 
 .intro-chunk p {
-  width: fit-content;
-  max-width: 400px;
   font-size: 1.25rem;
-  line-height: 150%;
+  line-height: 1.5;
   margin: 0 0 16px;
 }
 
@@ -44,30 +49,32 @@ main {
 .card {
   background: #fff;
   padding: 8px 24px 24px;
-  border-bottom: 8px outset #999;
+  border-bottom: 8px solid #999;
 }
 
 .indented-heading {
   background: #ffbf00;
-  border-bottom: 8px outset #cc9900;
+  border-bottom: 8px solid #cc9900;
   padding: 16px 32px;
   font-size: 1.5rem;
+  line-height: 1.2;
   width: fit-content;
   margin-left: -32px;
-  margin-bottom: 24px;
+  margin-bottom: 1rem; /* 16px but use rem for readability */
 }
 
 .card p {
   margin-bottom: 16px;
   font-size: 1.25rem;
-  line-height: 150%;
+  line-height: 1.5;
 }
 
 strong {
   color: #009966;
 }
 
-.intro-chunk, .card {
+.intro-chunk,
+.card {
   padding-left: 24px;
   padding-right: 24px;
 }
